@@ -10,7 +10,8 @@ import {
     WalletConnectButton
 } from '@solana/wallet-adapter-react-ui';
 import { Airdrop } from './Airdrop';
-import { Token } from './Token';
+import { Token } from './token';
+import { showbal} from './showbal' ; 
 
 
 // Default styles that can be overridden by your app
