@@ -10,8 +10,10 @@ import {
     WalletConnectButton
 } from '@solana/wallet-adapter-react-ui';
 import { Airdrop } from './Airdrop';
-import { Token } from './token';
-import { showbal} from './showbal' ; 
+import Token from './Token'; 
+import SendToken  from './SendToken'; 
+
+
 
 
 // Default styles that can be overridden by your app
@@ -40,8 +42,11 @@ export default function App() {
                 <WalletDisconnectButton />
               </div>
               <Airdrop onPublicKeyChange={setPublicKey} />
-              {publicKey && <Token publicKey={publicKey} />}
+             
+              <Token />
+              <SendToken />
             </div>
+            
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
